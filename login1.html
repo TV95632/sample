@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     ::placeholder {
+        color: rgba(124, 131, 127, 0.568);
+        font-size: large;
+        letter-spacing: 2px;
+    }
+</style>
+
+<body background="h.jpg">
+    <img src="net4.png" alt="NETFLIX" style="width: 4cm; height: 2cm;">
+
+    <div>
+        <h1 style="position: absolute;left:30%;bottom: 70%;font: size 70px;;color: azure;">Unlimited movies, TV shows, and more</h1>
+        <input type="email" id="go" placeholder="  username@email.com" style="position:absolute;border: hidden; font-size: medium; left: 37%;bottom: 50%;width: 8cm;height: 1cm;">
+
+        <button onclick="fun()" style="position: absolute;left:40.5% ;font-size: 30px;border: hidden;color: aliceblue;bottom: 40%;background-color: rgb(255, 0, 0);width: 5.5cm;height: 1.14cm">Try For Free ></button>
+    </div>
+
+    <script>
+        function fun() {
+            var email = document.getElementById("go").value
+            document.getElementById("go").innerHTML = email
+            if (email == "sanchu.gmail" || email == "abhimanyu.gmail" || email == "hello.gmail")
+                document.location.href = "Netflix.html";
+            else
+                window.alert("Enter correct Email")
+        }
+    </script>
+</body>
+
+</html>
